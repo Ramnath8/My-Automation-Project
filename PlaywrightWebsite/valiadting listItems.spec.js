@@ -36,7 +36,39 @@ async function validatingItems(page) {
     const Assertions = page.getByRole('link', {name:'Assertions'});
     const API_testing = page.getByRole('link',{name:'API testing'});
     const  Authentication = page.getByRole('link',{name:'Autentication'});
-    const Auto_waiting = page.getByRole('link', {name:''})
+    const Auto_waiting = page.getByRole('link', {name:'Auto-waiting'});
+    const Best_practices = page.getByRole('link',{name:'Best practices'});
+    const browsers = page.getByRole('link',{name:'Browsers'});
+    const Chrome_extentsion = page.getByRole('link',{name:'Chrome Extensions'});
+    const clock = page.getByRole('link',{name:'Clock'});
+    const components = page.getByRole('link',{name:'Components (experimental)'});
+    const Debugging_test = page.getByRole('link',{name:'Debugging Tets'});
+    const dialogs = page.getByRole('link', {name:'Dialogs'});
+    const downloads = page.getByRole('link',{name:'Downloads'})
+    const Evaluating_javascript = page.getByRole('link', {name:'Evaluating JavaScript'});
+    const events = page.getByRole('link', {name:'Events'});
+    const Extensibility = page.getByRole('link', {name:'Extensibility'});
+    const Frames = page.getByRole('link', {name:'Frames'});
+    const Handles = page.getByRole('link', {name:'Handles'});
+    const Isolation = page.getByRole('link', {name:'Isolation'});
+    const locators = page.getByRole('link', {name:'locators'});
+    const Mock_APIs = page.getByRole('link', {name:'Mock APIs'});
+    const Mock_Browser = page.getByRole('link', {name:'Mock Browser APIs'});
+    const Navigations = page.getByRole('link', {name:'Navigations'});
+    const Network = page.getByRole('link', {name:'Network'});
+    const Other_locators = page.getByRole('link', {name:'Other locators'});
+    const Pages = page.getByRole('link', {name:'Pages'});
+    const page_objectmodels = page.getByRole('link', {name:'Page object models'});
+    const screeshots = page.getByRole('link', {name:'Screenshots'});
+    const Aria_snapshots =page.getByRole('link',{name:'Aria snapshots'});
+    const VisualComparisions = Pages.getByRole('link', {name:'Visual comparisions'});
+    const Test_generator = page.getByRole('link', {name: 'Test generator'});
+    const Trace_viewer = page.getByRole('link', {name:'Trace viewer'});
+    const videos = page.getByRole('link', {name:'Videos'});
+    const webview2 = page.getByRole('link', {name:'WebView2'});
+    const Migration = page.getByRole('button', {name: 'Migration'});
+    const Intergrations = page.getByRole('button', {name:'Intergartions'});
+    const Supported_language= page.getByRole('button', {name:'Supported language'});
         //Validating all created elements
     /*if (!(await InstallationLink.isVisible())) {
         await getstarted.click();
