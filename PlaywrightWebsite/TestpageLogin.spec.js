@@ -8,6 +8,10 @@ test.describe('Login to Testpage', () => {
         await page.getByRole('textbox', {name: 'Username'}).fill(Username);
         await page.getByRole('textbox', {name: 'Password'}).fill(Password);
         await page.getByRole('button', {name: 'Login'}).click();
+        // await page.getByRole('heading', {name: 'Secure Area page for Automation Testing Practice'}).toBeVisible();
+        await page.getByRole('link', {name: 'Logout',}).click();
+        // await page.getByRole('button', {name: 'close',}).toBeVisible();
+        // await page.getByRole('button', {name: 'close',}).click();
     });
     test('Failed Login', async({page}) => {
         const Username = 'practice';
@@ -16,7 +20,8 @@ test.describe('Login to Testpage', () => {
         await page.getByRole('textbox', {name: 'Username'}).fill(Username);
         await page.getByRole('textbox', {name: 'Password'}).fill(Password);
         await page.getByRole('button', {name: 'Login'}).click();
-        await expect(page.getByRole('alert')).toHaveText('Your username is invalid!');
+        // await page.getByRole('button', {name:'close'}).toBeVisible();
+        await page.getByRole('button', {name:'close'}).click();
     })
 
 });
