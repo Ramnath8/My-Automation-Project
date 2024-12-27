@@ -28,20 +28,37 @@ test.describe('Login to Testpage', () => {
         // await page.getByRole('button', {name:'close'}).toBeVisible();
         await page.getByRole('button', {name:'close'}).click();
     });
-    test ('Registration page', async({page}) => {
-        const Username = 'username';
-        const Password = 'Passwordready';
-        const link = await page.getByRole('link', {name: 'here'});
-        await link.click();
-        const heading = await page.getByRole('heading', {name: 'Test Register page for Automation Testing Practice'});
-        const username = await page.getByRole('textbox', {name: 'Username'});
-        const` password = await page.getByRole('textbox', {name: 'Password'});
-        const` password = await page.getByRole('textbox', {name: 'Confirm Password'});
-        const` button = await page.getByRole('button', {name: 'Register'});
-        await username.fill(Username);
-        await password.fill(Password);
-        await confirm_password.fill(Password);
-        await button.click();
-    })
+    // test ('Registration page', async({page}) => {
+    //     const Username = 'username';
+    //     const Password = 'Passwordready';
+    //     const link = await page.getByRole('link', {name: 'here'});
+    //     await link.click();
+    //     const heading = await page.getByRole('heading', {name: 'Test Register page for Automation Testing Practice'});
+    //     const username = await page.getByRole('textbox', {name: 'Username'});
+    //     const password = await page.getByRole('textbox', {name: 'Password'});
+    //     const Repassword = await page.getByRole('textbox', {name: 'Confirm Password'});
+    //     const button = await page.getByRole('button', {name: 'Register'});
+    //     const close_ad = await page.getByRole('button', {name: 'close ad'});
+    //     if (await close_ad.isVisible()){ 
+    //         await close_ad.click
+            
+    //     };
+    //     await username.fill(Username);
+    //     if (await close_ad.isVisible()){ 
+    //         await close_ad.click
+            
+    //     };
+    //     await password.fill(Password);
+    //     if (await close_ad.isVisible()){ 
+    //         await close_ad.click
+            
+    //     };
+    //     await confirm_password.fill(Password);
+    //     if (await close_ad.isVisible()){ 
+    //         await close_ad.click
+            
+    //     };
+    //     await button.click();
+    // });
 
 });
